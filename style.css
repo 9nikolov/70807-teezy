@@ -53,7 +53,7 @@ textarea {
   --FS: clamp(1rem, 2.2vh, 1.5rem);
 
   /* COLORS */
-  --BGCOLOR: #111;
+  --BGCOLOR: #0f0f0f;
   --FONT-COLOR: whitesmoke;
 
   --BGCOLOR-FADE: rgb(252, 220, 160);
@@ -86,6 +86,11 @@ textarea {
 /* ## UTILITY CLASSES */
 
 /* ## GENERAL STYLES */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--BGCOLOR);
   color: var(--FONT-COLOR);
@@ -100,12 +105,131 @@ h5,
 h6 {
   font-family: var(--FF-HEADINGS);
   font-weight: 400;
-  font-style: none;
+}
+
+/* ### CAUTION LINE */
+.caution-line {
+  width: 100%;
+  white-space: nowrap; /* Prevents wrapping to new lines */
+  overflow: hidden; /* Hide any content that overflows the container */
+  background: #d6df00;
+  color: black;
+  font-weight: bold;
 }
 
 /* ### HEADER */
 
+.header {
+  height: 336px;
+}
+
+.header__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2;
+  width: calc(320px - 32px);
+  margin: 0 auto;
+  position: relative;
+}
+
+.header__navbar {
+  height: 46px;
+  display: flex;
+  justify-content: end;
+  margin-right: 12px;
+  margin-bottom: 24px;
+}
+
+.header__hamburger-button {
+  width: 20px;
+  height: 20px;
+  align-self: center;
+}
+
+.header__h1 {
+  font-size: 64px;
+  text-align: center;
+  grid-column: span 2;
+  gap: 10rem;
+}
+
+.header__glock-imgs-container {
+  display: flex;
+  width: 300px;
+  justify-content: center;
+}
+
+.header__glock-img {
+  width: 120px;
+}
+
+.header__glock-img--flipped {
+  transform: scaleX(-1);
+}
+
+.header__70807-teezy-img {
+  position: absolute;
+  top: 40px;
+  margin: 0 auto;
+  width: 188px;
+  height: auto;
+}
+
+.header__caution-line {
+  position: absolute;
+  top: 326px;
+  transform: rotate(1.8deg);
+}
+
 /* ### MUSIC */
+
+.music {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 3rem;
+}
+
+.music__album-cover {
+  width: 224px;
+  height: 224px;
+  margin-bottom: 1rem;
+}
+
+.music_h2 {
+  font-size: 48px;
+  margin-bottom: 0.25rem;
+}
+
+.music__stream {
+  font-family: var(--FF-HEADINGS);
+  color: black;
+  text-decoration: none;
+  background: #d6df00;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 24px;
+  margin-bottom: 1.5rem;
+}
+
+.music__socials-container {
+  display: flex;
+  column-gap: 32px;
+  margin-bottom: 2rem;
+}
+
+.music__socials {
+  width: 24px;
+  height: 24px;
+}
+
+.music__caution-line {
+  transform: rotate(-3.5deg);
+}
 
 /* ### VIDEOS */
 
