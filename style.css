@@ -130,6 +130,7 @@ h6 {
 /* ### HEADER */
 
 .header {
+  margin-top: 38px;
   height: 336px;
 }
 
@@ -151,14 +152,6 @@ h6 {
   width: calc(320px - 32px);
   margin: 0 auto;
   position: relative;
-}
-
-.header__navbar {
-  height: 46px;
-  display: flex;
-  justify-content: end;
-  margin-right: 12px;
-  margin-bottom: 24px;
 }
 
 .header__hamburger-button {

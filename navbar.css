@@ -1,0 +1,144 @@
+/*----------------------------------------------
+------------------------------------------------
+1. Navbar
+------------------------------------------------
+----------------------------------------------*/
+
+/* Define transition duration for
+navbar links hover effect (includes font size and color change) 
+mobile hamburger menu (smoothly appears from the right) */
+
+/* ## FONTS */
+@font-face {
+  font-family: "Century Gothic";
+  src: url(/fonts/GOTHIC.TTF);
+}
+
+@font-face {
+  font-family: "Century Gothic Bold";
+  src: url(/fonts/GOTHICB.TTF);
+}
+
+@font-face {
+  font-family: "Grot Rough";
+  src: url(/fonts/GROTR.ttf);
+}
+
+:root {
+  --transition-duration: 1.05s;
+}
+
+.navbar {
+  display: flex;
+  justify-content: end;
+
+  position: static;
+  top: 0;
+  height: 32px;
+  width: 100%;
+  background-color: #111111;
+  z-index: 100;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  transition: var(--transition-duration) ease-in-out;
+}
+
+.navbar__links {
+  font-family: "Century Gothic";
+  color: white;
+
+  padding-top: 1rem;
+  position: absolute;
+  top: -400px;
+  right: 0px;
+  background-color: #111111;
+  z-index: 9999;
+
+  font-size: 20px;
+  transition: var(--transition-duration) ease;
+  height: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar__hamburger {
+  /* REMOVES THE STYLING OF THE <button> */
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  display: block;
+  margin-right: 1rem;
+}
+
+.navbar__hamburger-close {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 1.3rem;
+  margin-top: 16px;
+  font-size: 16px;
+  color: white;
+}
+
+/* this class is required by "navbar.js" */
+.navbar .move-left {
+  right: 0px;
+  top: 0px;
+}
+
+@media only screen and (min-width: 576px) {
+  .navbar a:any-link {
+    color: black;
+  }
+  .navbar {
+    background: #d6df00;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Hide hamburger */
+  .navbar__hamburger {
+    display: none;
+  }
+
+  /* Hide hamburger close button */
+  .navbar__hamburger-close {
+    display: none;
+  }
+
+  .navbar__links {
+    font-size: 16px;
+    background: #d6df00;
+
+    /* Converts mobile-styled hamburger links to regular navbar links for desktop */
+    height: auto;
+    position: static;
+    right: auto;
+    flex-direction: row;
+    row-gap: 0;
+    border-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+    transition: none;
+    width: auto;
+
+    display: flex;
+
+    /* Adjust the spacing between links */
+    column-gap: 64px;
+  }
+}

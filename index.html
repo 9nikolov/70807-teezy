@@ -95,28 +95,36 @@
     <meta name="author" content="9nikolov (Nikola Nikolov)" />
 
     <!-- Link to Stylesheet -->
+
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
   </head>
   <body class="background-texture">
+    <nav class="navbar">
+      <button id="navbar__hamburger" class="navbar__hamburger">
+        <img class="navbar__hamburger-svg" src="/Hamburger_icon.svg" />
+      </button>
+      <ul id="navbar__links" class="navbar__links">
+        <a id="navbar__hamburger-close" class="navbar__hamburger-close" href="#"
+          >X</a
+        >
+        <li>
+          <a class="navbar__link-web-projects" href="#music">MUSIC</a>
+        </li>
+        <li>
+          <a class="navbar__link-know-me" href="#videos">VIDEOS</a>
+        </li>
+        <li>
+          <a class="navbar__link-contact-me" href="#about">ABOUT</a>
+        </li>
+      </ul>
+    </nav>
+
     <header class="header">
       <h1 class="hide-element">
         70807 Teezy Official Website: Music, Videos, Bio
       </h1>
-      <nav class="header__navbar">
-        <h2 class="hide-element">Navigation</h2>
-        <img
-          class="header__hamburger-button"
-          src="img/navbar-hamburger-icon-32x32.png"
-          width="32px"
-          height="32px"
-          alt="hamburger icon"
-        />
-        <!-- <div class="header__links-container">
-          <a href="#music">MUSIC</a>
-          <a href="#videos">VIDEOS</a>
-          <a href="#about">ABOUT</a>
-        </div> -->
-      </nav>
+
       <section class="header__container">
         <h2 class="hide-element">Introduction</h2>
         <p class="header__heading heading">70807 Teezy</p>
@@ -164,7 +172,7 @@
       </div>
     </header>
     <main>
-      <section id="" class="music">
+      <section id="music" class="music">
         <img
           loading="lazy"
           class="music__album-cover"
@@ -231,7 +239,7 @@
         CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION
         CAUTION CAUTION CAUTION
       </div>
-      <section class="videos">
+      <section id="videos" class="videos">
         <h2 class="hide-element">Music Videos</h2>
         <p class="videos__h2 heading">VIDEOS</p>
         <!-- Changed from <h2> to </h2> -->
@@ -273,7 +281,7 @@
         CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION CAUTION
         CAUTION CAUTION CAUTION
       </div>
-      <section class="about">
+      <section id="about" class="about">
         <h2 class="hide-element">About 70807 Teezy</h2>
         <div class="about__container">
           <img
@@ -324,5 +332,6 @@
         <p><a href="https://www.9nikolov.com/">built by 9nikolov</a></p>
       </div>
     </footer>
+    <script src="navbar.js"></script>
   </body>
 </html>
