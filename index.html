@@ -100,25 +100,17 @@
     <link rel="stylesheet" href="navbar.css" />
   </head>
   <body class="background-texture">
-    <nav class="navbar">
-      <button id="navbar__hamburger" class="navbar__hamburger">
-        <img class="navbar__hamburger-svg" src="/Hamburger_icon.svg" />
-      </button>
-      <ul id="navbar__links" class="navbar__links">
-        <a id="navbar__hamburger-close" class="navbar__hamburger-close" href="#"
-          >X</a
-        >
-        <li>
-          <a class="navbar__link-web-projects" href="#music">MUSIC</a>
-        </li>
-        <li>
-          <a class="navbar__link-know-me" href="#videos">VIDEOS</a>
-        </li>
-        <li>
-          <a class="navbar__link-contact-me" href="#about">ABOUT</a>
-        </li>
+    <section class="top-nav">
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <ul class="menu">
+        <li><a href="#music">MUSIC</a></li>
+        <li><a href="#videos">VIDEOS</a></li>
+        <li><a href="#about">ABOUT</a></li>
       </ul>
-    </nav>
+    </section>
 
     <header class="header">
       <h1 class="hide-element">
