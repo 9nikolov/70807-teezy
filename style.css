@@ -486,6 +486,7 @@ a:focus-visible {
     z-index: 22;
   }
   #menu-toggle:checked ~ .menu li {
+    border: 2px solid var(--BGCOLOR);
     height: 6em;
     padding: 0.5em;
     transition: 0.77s ease-in-out;
@@ -497,7 +498,7 @@ a:focus-visible {
     margin: 0;
     padding: 0.5em 0;
     width: 100%;
-    color: white;
+    color: var(--BGCOLOR);
     background-color: var(--BGCOLOR);
   }
 }
