@@ -48,38 +48,11 @@ textarea {
   --FF: "Century Gothic", sans-serif;
   --FF-HEADINGS: "Grot Rough", sans-serif;
   --FF-HEADINGS-WEIGHT: 400;
-  --FS: clamp(1rem, 2.2vh, 1.5rem);
 
   /* COLORS */
   --BGCOLOR: #0f0f0f;
 
   --FONT-COLOR: whitesmoke;
-
-  --BGCOLOR-FADE: rgb(252, 220, 160);
-  --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
-  --BODY-BGCOLOR: #fff;
-  --BORDER-COLOR: #333;
-  --BUTTON-COLOR: #fff;
-  --HEADER-BGCOLOR: #000;
-  --HEADER-COLOR: #fff;
-  --HERO-BGCOLOR: rgba(51, 178, 51, 0.75);
-  --HERO-COLOR: #fff;
-  --HIGHLIGHT-COLOR: rgb(51, 178, 51);
-  --LINK-ACTIVE: orange;
-  --LINK-COLOR: #000;
-  --LINK-HOVER: hsla(0, 0%, 0%, 0.6);
-  --NAV-BGCOLOR: #fff;
-
-  /* BORDERS */
-  --BORDERS: 1px solid var(--BORDER-COLOR);
-  --BORDER-RADIUS: 15px;
-
-  /* STANDARD PADDING */
-  --PADDING-TB: 0.25em;
-  --PADDING-SIDE: 2.5%;
-
-  /* STANDARD MARGIN */
-  --MARGIN: clamp(1em, 2.5vh, 1.5em) 0;
 }
 
 /* ## UTILITY CLASSES */
@@ -126,6 +99,7 @@ h6 {
 }
 
 /* ### NAVBAR */
+
 .top-nav {
   display: flex;
 
@@ -291,8 +265,6 @@ a:focus-visible {
 }
 
 .music__album-cover {
-  /* width: 224px;
-  height: 224px; */
   width: 50%;
   min-width: 250px;
   max-width: 400px;
@@ -439,7 +411,7 @@ a:focus-visible {
   text-decoration: none;
 }
 
-/* || MEDIA QUERIES */
+/* ## MEDIA QUERIES */
 @media (max-width: 768px) {
   .header__70807-teezy-img {
     top: 24px;
