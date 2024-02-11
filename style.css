@@ -424,6 +424,10 @@ a:focus-visible {
     top: 24px;
   }
 
+  .header__introduction {
+    margin-top: 64px;
+  }
+
   .top-nav {
     background-color: var(--BGCOLOR);
     justify-content: end;
@@ -437,7 +441,7 @@ a:focus-visible {
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 90px;
+    margin-top: 64px;
     background: var(--BGCOLOR);
     left: 0;
     flex-direction: column;
