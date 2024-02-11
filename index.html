@@ -98,32 +98,35 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="background-texture">
-    <section class="top-nav">
-      <input id="menu-toggle" type="checkbox" />
-      <label class="menu-button-container" for="menu-toggle">
-        <div class="menu-button"></div>
-      </label>
-      <ul class="menu">
-        <li><a href="#music">MUSIC</a></li>
-        <li><a href="#videos">VIDEOS</a></li>
-        <li><a href="#about">ABOUT</a></li>
-      </ul>
-    </section>
-
+  <body id="page-content" class="background-texture">
     <header class="header">
       <h1 class="hide-element">
         70807 Teezy Official Website: Music, Videos, Bio
       </h1>
-      <h2 class="hide-element">Introduction</h2>
-      <p class="header__heading heading">70807 Teezy</p>
-      <img
-        class="header__70807-teezy-img"
-        src="/img/header-teezy-cut-780x582.webp"
-        alt="image of rapper 70807 Teezy"
-        height="582px"
-        width="780px"
-      />
+
+      <section id="navbar" class="top-nav">
+        <h2 class="hide-element">Navigation</h2>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
+          <li><a href="#music">MUSIC</a></li>
+          <li><a href="#videos">VIDEOS</a></li>
+          <li><a href="#about">ABOUT</a></li>
+        </ul>
+      </section>
+      <section id="intro" class="header__introduction">
+        <h2 class="hide-element">Introduction</h2>
+        <p class="header__heading heading">70807 Teezy</p>
+        <img
+          class="header__70807-teezy-img"
+          src="/img/header-teezy-cut-780x582.webp"
+          alt="image of rapper 70807 Teezy"
+          height="582px"
+          width="780px"
+        />
+      </section>
       <div id="cautionLine" class="header__caution-line caution-line"></div>
     </header>
     <main>
